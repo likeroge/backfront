@@ -4,6 +4,7 @@ FROM nginx:alpine
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
+
 # Копируем исходные файлы
 COPY src/ ./
 

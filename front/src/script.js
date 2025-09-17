@@ -1,6 +1,10 @@
 console.log("Hello world!");
 
-function changeColor() {
+async function changeColor() {
+  let data = await fetch("http://backend:5000/users");
+  console.log(data);
+  console.log(data.json());
+
   const title = document.querySelector(".main-title");
   const colors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#f9ca24", "#6c5ce7"];
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
