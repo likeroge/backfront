@@ -1,7 +1,7 @@
 console.log("Hello world!");
 
 async function changeColor() {
-  console.log("changeColor func2");
+  console.log("changeColor func3");
 
   // let data = await fetch("http://backend:5000/users");
   let data = await fetch("/api/users");
