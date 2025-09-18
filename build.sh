@@ -6,6 +6,9 @@ print_message() {
     echo "=================================="
 }
 
+print_message "Обновление кода"
+git pull
+
 print_message "Остановка и удаление контейнеров"
 docker-compose down
 
