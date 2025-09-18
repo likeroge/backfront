@@ -7,7 +7,10 @@ async function changeColor() {
   let data = await fetch("/api/users");
 
   console.log(data);
-  console.log(await data.json());
+  const users = await data.json();
+  console.log(users);
+  const body = await data.body();
+  console.log(body);
 
   const title = document.querySelector(".main-title");
   const colors = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#f9ca24", "#6c5ce7"];
