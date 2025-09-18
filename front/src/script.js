@@ -3,8 +3,8 @@ console.log("Hello world!");
 async function changeColor() {
   console.log("changeColor func2");
 
-  let data = await fetch("http://backend:5000/users");
-  // let data = await fetch("/api/users");
+  // let data = await fetch("http://backend:5000/users");
+  let data = await fetch("/api/users");
 
   console.log(data);
   console.log(data.json());
