@@ -20,9 +20,7 @@ services:
       - NODE_ENV=production
     networks:
       - my-network
-aliases:
-  backend: backend
-  frontend: frontend
+
 networks:
   my-network:
     driver: bridge
